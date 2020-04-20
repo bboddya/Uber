@@ -247,6 +247,7 @@ nav
                 width: 14px
                 height: 2px
                 background: $main-color
+                transition: 0.5s all
             &:after
                 content: ''
                 display: block
@@ -254,6 +255,10 @@ nav
                 height: 14px
                 background: $main-color
                 position: absolute
+                transition: 0.5s all
+            &:hover
+                &:before, &:after
+                    background-color: $second-color
                 
 
 
@@ -294,3 +299,61 @@ nav
         font-size: 17px
         font-weight: 300
         line-height: 24px
+
+.terms
+    min-height: 919px
+    padding: 68px 0 84px 0
+    &_wrapper
+        margin-top: 33px
+    &_title, &_title_red
+        color: $main-color
+        font-size: 22px
+        font-weight: 500
+    p
+        color: $main-color
+        font-weight: 500
+    &_list, &_list_red
+        font-size: 17px
+        font-weight: 500
+        line-height: 28px
+        padding-left: 50px
+        li
+            position: relative
+            list-style: none
+            &:before
+                content: ''
+                display: block
+                position: absolute
+                left: -31px
+                top: 3px
+                width: 21px
+                height: 20px
+                background: url('../img/check-blue.png') center (center / cover) no-repeat
+    &_title_red
+        color: $second-color
+        margin-top: 62px
+    &_list_red
+        li
+            &:before
+                background: url('../img/check-red.png') center (center / cover) no-repeat
+                
+.map
+    position: relative
+    height: 717px
+    background: url(../img/all-world.jpg) center (center / cover) no-repeat
+    padding: 49px 0 49px 0
+    &_link
+        display: block
+        position: absolute
+        bottom: 49px
+        left: 50%
+        transform: translateX(-50%)
+        color: $main-color
+        font-size: 15px
+        font-weight: 400
+        text-transform: uppercase
+        &:hover
+            color: lighten($main-color, 20%)
+            text-decoration: none
+
+

@@ -345,9 +345,10 @@ nav {
   width: 14px;
   height: 2px;
   background: #1eacc7;
+  transition: 0.5s all;
 }
 
-/* line 250, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
+/* line 251, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
 .mobile_item_plus:after {
   content: '';
   display: block;
@@ -355,9 +356,15 @@ nav {
   height: 14px;
   background: #1eacc7;
   position: absolute;
+  transition: 0.5s all;
 }
 
 /* line 260, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
+.mobile_item_plus:hover:before, .mobile_item_plus:hover:after {
+  background-color: #ff5656;
+}
+
+/* line 265, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
 .title_text {
   color: #222222;
   font-size: 17px;
@@ -368,13 +375,13 @@ nav {
   z-index: 2;
 }
 
-/* line 269, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
+/* line 274, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
 .title_text_white {
   color: #ffffff;
   margin-top: 19px;
 }
 
-/* line 273, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
+/* line 278, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
 .choise {
   position: relative;
   height: 896px;
@@ -382,7 +389,7 @@ nav {
   background: url("../img/choice-bg.jpg") center center/cover no-repeat;
 }
 
-/* line 278, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
+/* line 283, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
 .choise .black {
   background-color: #000;
   position: absolute;
@@ -393,7 +400,7 @@ nav {
   top: 0;
 }
 
-/* line 286, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
+/* line 291, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
 .choise img {
   position: relative;
   z-index: 2;
@@ -401,13 +408,101 @@ nav {
   margin: 56px auto 0 auto;
 }
 
-/* line 291, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
+/* line 296, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
 .choise .choise_text {
   text-align: center;
   color: #222222;
   font-size: 17px;
   font-weight: 300;
   line-height: 24px;
+}
+
+/* line 303, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
+.terms {
+  min-height: 919px;
+  padding: 68px 0 84px 0;
+}
+
+/* line 306, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
+.terms_wrapper {
+  margin-top: 33px;
+}
+
+/* line 308, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
+.terms_title, .terms_title_red {
+  color: #1eacc7;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* line 312, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
+.terms p {
+  color: #1eacc7;
+  font-weight: 500;
+}
+
+/* line 315, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
+.terms_list, .terms_list_red {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28px;
+  padding-left: 50px;
+}
+
+/* line 320, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
+.terms_list li, .terms_list_red li {
+  position: relative;
+  list-style: none;
+}
+
+/* line 323, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
+.terms_list li:before, .terms_list_red li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -31px;
+  top: 3px;
+  width: 21px;
+  height: 20px;
+  background: url("../img/check-blue.png") center center/cover no-repeat;
+}
+
+/* line 332, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
+.terms_title_red {
+  color: #ff5656;
+  margin-top: 62px;
+}
+
+/* line 337, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
+.terms_list_red li:before {
+  background: url("../img/check-red.png") center center/cover no-repeat;
+}
+
+/* line 340, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
+.map {
+  position: relative;
+  height: 717px;
+  background: url(../img/all-world.jpg) center center/cover no-repeat;
+  padding: 49px 0 49px 0;
+}
+
+/* line 345, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
+.map_link {
+  display: block;
+  position: absolute;
+  bottom: 49px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #1eacc7;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 355, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
+.map_link:hover {
+  color: #63d2e8;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
