@@ -4,6 +4,13 @@ header
 nav
     height: 51px
     background-color: #212121
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 5
+
+.hamburger
+    display: none
 
 .menu
     display: flex
@@ -27,6 +34,7 @@ nav
     width: 100%
     height: 84px
     background-color: rgba(0, 0, 0, 0.6)
+    margin-top: 51px
     &_logo
         display: block
         max-width: 100%
@@ -264,7 +272,7 @@ nav
 
 .choise
     position: relative
-    height: 896px
+    min-height: 896px
     padding: 57px 0 138px 0
     background: url('../img/choice-bg.jpg') center (center / cover) no-repeat
     .black
@@ -345,6 +353,7 @@ nav
 
 
 footer
+    min-height: 300px
     padding: 14px 23px 30px 23px
     a
         text-decoration: none
@@ -409,3 +418,5 @@ footer
             font-size: 11px
             font-weight: 400
             text-transform: uppercase
+.xs-visible
+    display: none

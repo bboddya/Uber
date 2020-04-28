@@ -25,7 +25,13 @@
             &:nth-child(3)
                 width: 25%
                 display: flex
-                justify-content: flex-end
+                justify-content: center
+        &_app
+            display: flex
+            flex-direction: column
+            a
+                padding-bottom: 10px
+
 
 @media (max-width: 991px)
     .menu
@@ -45,9 +51,9 @@
             font-size: 40px
         &_subheader
             font-size: 25px
+    .title
+        font-size: 35px
     .reasons
-        .title
-            font-size: 35px
         &_text_block
             margin-top: 10px
         &_block
@@ -92,3 +98,83 @@
             margin: 10px 0
         &_link
             font-size: 20px
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .subheader
+        .number
+            margin-top: 5px
+            font-size: 16px
+            font-weight: 400
+            text-transform: uppercase
+            text-align: center
+        .call_us_btn
+            display: block
+            margin-top: 5px
+            width: 200px
+            height: 40px
+            margin: 0 auto
+    .promo
+        padding: 180px 0 120px 0
+        &_header
+            font-size: 35px
+        &_subheader
+            font-size: 23px
+    .title
+        font-size: 27px
+    .choise
+        min-height: 500px
+    .footer
+        &_wrapper
+            flex-direction: column
+        &_wrapper > div
+            margin-bottom: 40px
+            width: 100%
+            &:nth-child(1)
+                width: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+            &:nth-child(2)
+                order: -1
+            &:nth-child(3)
+                width: 100%
+                justify-content: center
+                align-items: center
+        &_app
+            display: flex
+            flex-direction: row
+            a
+                padding: 0 2px          
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+
+@media (max-width: 575px)
+    .subheader
+        
+            .number
+            .call_us_btn
+                width: 100%
