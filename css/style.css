@@ -1,0 +1,954 @@
+@charset "UTF-8";
+/* line 1, ../../Users/Богдан/Desktop/html/Uber/src/sass/style.sass */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 1, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+header {
+  position: relative;
+}
+
+/* line 4, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+nav {
+  position: fixed;
+  height: 50px;
+  background-color: #212121;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+/* line 12, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.hamburger {
+  display: none;
+}
+
+/* line 15, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style: none;
+}
+
+/* line 21, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.menu_link {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* line 25, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.menu_item {
+  border-right: 2px dotted #000;
+  padding-right: 28px;
+}
+
+/* line 28, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.menu_item:last-child {
+  border-right: none;
+}
+
+/* line 32, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.subheader {
+  position: absolute;
+  width: 100%;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 51px;
+}
+
+/* line 38, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.subheader_logo {
+  display: block;
+  max-width: 100%;
+  margin-top: 16px;
+}
+
+/* line 43, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.logo_text {
+  color: #ffffff;
+  opacity: 0.5;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 6px;
+  line-height: 10px;
+}
+
+/* line 51, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.call_us {
+  margin-top: 19px;
+  line-height: 10px;
+  text-align: right;
+  margin-right: 3px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+/* line 60, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.number {
+  display: block;
+  margin-top: 8px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: 0.5s all;
+  text-align: right;
+}
+
+/* line 69, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.number:hover {
+  text-decoration: none;
+  color: #1eacc7;
+}
+
+/* line 74, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.call_us_btn {
+  width: 172px;
+  height: 46px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+  border: 0;
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin-top: 19px;
+}
+
+/* line 2, ../../Users/Богдан/Desktop/html/Uber/src/sass/_mixins.sass */
+.call_us_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/* line 89, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.promo {
+  min-height: 799px;
+  background: url("../img/main-bg.jpg") center center/cover no-repeat;
+  padding: 150px 0 135px 0;
+}
+
+/* line 93, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.promo_header {
+  font-weight: 700;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* line 99, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.promo_subheader {
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  line-height: 20px;
+}
+
+/* line 106, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.promo_descr {
+  margin-top: 23px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* line 113, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.promo_btn {
+  width: 259px;
+  height: 63px;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  border-radius: 3px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  margin-top: 118px;
+}
+
+/* line 2, ../../Users/Богдан/Desktop/html/Uber/src/sass/_mixins.sass */
+.promo_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/* line 130, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.label {
+  width: 112px;
+  height: 24px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px 11px;
+}
+
+/* line 142, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.label_white {
+  background-color: #fff;
+  color: #000;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 148, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.title {
+  color: #222222;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 27px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 38px;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 159, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.title_white {
+  color: #ffffff;
+  margin-top: 32px;
+}
+
+/* line 163, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.reasons {
+  min-height: 900px;
+  padding: 79px 0 65px 0;
+}
+
+/* line 166, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.reasons_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+/* line 171, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.reasons_round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 113px;
+  height: 113px;
+  background-color: #1eacc7;
+  border-radius: 100%;
+}
+
+/* line 179, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.reasons_text_block {
+  width: 345px;
+  margin-left: 26px;
+}
+
+/* line 182, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.reasons_title {
+  line-height: 21px;
+  color: #1eacc7;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* line 187, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.reasons_text {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/* line 193, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.mobile {
+  background: url("../img/app-bg.jpg") center center/cover no-repeat;
+  min-height: 864px;
+  padding: 48px 0 80px 0;
+}
+
+/* line 197, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.mobile .row {
+  margin-top: 32px;
+}
+
+/* line 199, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.mobile_item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 92px;
+}
+
+/* line 206, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.mobile_item_1 {
+  background: url("../img/app-img-1.jpg") center center/cover no-repeat;
+}
+
+/* line 208, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.mobile_item_2 {
+  background: url("../img/app-img-2.jpg") center center/cover no-repeat;
+}
+
+/* line 210, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.mobile_item_3 {
+  background: url("../img/app-img-3.jpg") center center/cover no-repeat;
+}
+
+/* line 212, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.mobile_item_4 {
+  background: url("../img/app-img-4.jpg") center center/cover no-repeat;
+}
+
+/* line 214, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.mobile_item_5 {
+  background: url("../img/app-img-5.jpg") center center/cover no-repeat;
+}
+
+/* line 216, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.mobile_item_6 {
+  background: url("../img/app-img-6.jpg") center center/cover no-repeat;
+}
+
+/* line 218, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.mobile_item_subtitle {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 225, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.mobile_item_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  margin: 0 auto;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* line 239, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.mobile_item_plus:before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 2px;
+  background: #1eacc7;
+  transition: 0.5s all;
+}
+
+/* line 246, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.mobile_item_plus:after {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 14px;
+  background: #1eacc7;
+  position: absolute;
+  transition: 0.5s all;
+}
+
+/* line 255, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.mobile_item_plus:hover:before, .mobile_item_plus:hover:after {
+  background-color: #ff5656;
+}
+
+/* line 260, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.title_text {
+  color: #222222;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 19px;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 269, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.title_text_white {
+  color: #ffffff;
+  margin-top: 19px;
+}
+
+/* line 273, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.choise {
+  position: relative;
+  min-height: 896px;
+  padding: 57px 0 138px 0;
+  background: url("../img/choice-bg.jpg") center center/cover no-repeat;
+}
+
+/* line 278, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.choise .black {
+  background-color: #000;
+  position: absolute;
+  height: 499px;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+/* line 286, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.choise img {
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: 56px auto 0 auto;
+}
+
+/* line 291, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.choise .choise_text {
+  text-align: center;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* line 298, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.terms {
+  min-height: 919px;
+  padding: 68px 0 84px 0;
+}
+
+/* line 301, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.terms_wrapper {
+  margin-top: 33px;
+}
+
+/* line 303, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.terms_title, .terms_title_red {
+  color: #1eacc7;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* line 307, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.terms p {
+  color: #1eacc7;
+  font-weight: 500;
+}
+
+/* line 310, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.terms_list, .terms_list_red {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28px;
+  padding-left: 50px;
+}
+
+/* line 315, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.terms_list li, .terms_list_red li {
+  position: relative;
+  list-style: none;
+}
+
+/* line 318, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.terms_list li:before, .terms_list_red li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -31px;
+  top: 3px;
+  width: 21px;
+  height: 20px;
+  background: url("../img/check-blue.png") center center/cover no-repeat;
+}
+
+/* line 327, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.terms_title_red {
+  color: #ff5656;
+  margin-top: 62px;
+}
+
+/* line 332, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.terms_list_red li:before {
+  background: url("../img/check-red.png") center center/cover no-repeat;
+}
+
+/* line 335, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.map {
+  position: relative;
+  height: 717px;
+  background: url(../img/all-world.jpg) center center/cover no-repeat;
+  padding: 49px 0 49px 0;
+}
+
+/* line 340, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.map_link {
+  display: block;
+  position: absolute;
+  bottom: 49px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #1eacc7;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 350, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.map_link:hover {
+  color: #63d2e8;
+  text-decoration: none;
+}
+
+/* line 355, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+footer {
+  min-height: 300px;
+  padding: 14px 23px 30px 23px;
+}
+
+/* line 358, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+footer a {
+  text-decoration: none;
+}
+
+/* line 362, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.footer_devider {
+  width: 299px;
+  height: 4px;
+  background-color: #1eacc7;
+  margin: 0 auto;
+}
+
+/* line 367, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 32px 0 39px 0;
+}
+
+/* line 372, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.footer_wrapper > div {
+  width: 33%;
+}
+
+/* line 374, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.footer_wrapper > div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 377, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.footer_social {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 381, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.footer_social_item {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  background-color: #070716;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+}
+
+/* line 390, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.footer_social_item i {
+  color: #fff;
+}
+
+/* line 392, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.footer_links {
+  width: 390px;
+  margin: 0 auto;
+}
+
+/* line 395, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.footer_links_main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* line 399, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.footer_links_main a {
+  color: #070716;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 404, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.footer_links_sub {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* line 408, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.footer_links_sub a {
+  color: #999999;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 413, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.footer_links_lang {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #1fbad6;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 421, ../../Users/Богдан/Desktop/html/Uber/src/sass/_general.sass */
+.xs-visible {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  /* line 3, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 20px;
+  }
+  /* line 5, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .menu_link {
+    font-size: 13px;
+  }
+  /* line 8, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .promo_header {
+    font-size: 50px;
+  }
+  /* line 10, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .promo_subheader {
+    font-size: 30px;
+  }
+  /* line 13, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .reasons_text_block {
+    width: 315px;
+  }
+  /* line 15, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .reasons_block {
+    align-items: start;
+  }
+  /* line 18, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .mobile_item {
+    width: 300px;
+  }
+  /* line 21, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .footer_wrapper > div {
+    width: 50%;
+  }
+  /* line 23, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    width: 25%;
+  }
+  /* line 25, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+  }
+  /* line 29, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .footer_app {
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 32, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .footer_app a {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 38, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 9px;
+  }
+  /* line 40, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .menu_link {
+    font-size: 10px;
+  }
+  /* line 43, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .subheader .logo_img {
+    width: 100%;
+  }
+  /* line 45, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .subheader .logo_text {
+    font-size: 11px;
+  }
+  /* line 47, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .subheader .number {
+    font-size: 20px;
+  }
+  /* line 50, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .promo_header {
+    font-size: 40px;
+  }
+  /* line 52, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .promo_subheader {
+    font-size: 25px;
+  }
+  /* line 54, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .title {
+    font-size: 35px;
+  }
+  /* line 57, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .reasons_text_block {
+    margin-top: 10px;
+  }
+  /* line 59, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .reasons_block {
+    align-items: center;
+    flex-direction: column;
+  }
+  /* line 62, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .choise {
+    min-height: 800px;
+  }
+  /* line 64, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .choise_img {
+    width: 100%;
+  }
+  /* line 67, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .footer_links {
+    width: 300px;
+  }
+  /* line 70, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .footer_links_main a {
+    font-size: 12px;
+  }
+  /* line 73, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .footer_links_sub a {
+    font-size: 9px;
+  }
+  /* line 76, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .footer_links_lang a {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 80, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.6s all;
+    z-index: 5;
+  }
+  /* line 93, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .menu_active {
+    left: 0;
+  }
+  /* line 95, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 0;
+    border: none;
+    margin: 10px 0;
+  }
+  /* line 99, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .menu_link {
+    font-size: 20px;
+  }
+  /* line 101, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  /* line 109, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 2px;
+    transition: 0.5s all;
+  }
+  /* line 117, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  /* line 119, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 121, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 123, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 126, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .subheader .number {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  /* line 132, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .subheader .call_us_btn {
+    display: block;
+    margin-top: 5px;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+  }
+  /* line 138, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .promo {
+    padding: 180px 0 120px 0;
+  }
+  /* line 140, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .promo_header {
+    font-size: 35px;
+  }
+  /* line 142, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .promo_subheader {
+    font-size: 23px;
+  }
+  /* line 144, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .title {
+    font-size: 27px;
+  }
+  /* line 146, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .choise {
+    min-height: 500px;
+  }
+  /* line 149, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .footer_wrapper {
+    flex-direction: column;
+  }
+  /* line 151, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .footer_wrapper > div {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  /* line 154, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 159, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(2) {
+    order: -1;
+  }
+  /* line 161, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 165, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .footer_app {
+    display: flex;
+    flex-direction: row;
+  }
+  /* line 168, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .footer_app a {
+    padding: 0 2px;
+  }
+  /* line 170, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .xs-hidden {
+    display: none;
+  }
+  /* line 172, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .xs-visible {
+    display: block;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 176, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .subheader {
+    height: 60px;
+  }
+  /* line 178, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .subheader_logo {
+    margin-top: 16px;
+  }
+  /* line 180, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .subheader .logo_text {
+    display: none;
+  }
+  /* line 182, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .subheader .number {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 9px;
+  }
+  /* line 187, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .subheader .call_us_btn {
+    width: 110px;
+    height: 22px;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  /* line 192, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .promo {
+    min-height: 400px;
+  }
+  /* line 194, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .promo_header {
+    line-height: 45px;
+  }
+  /* line 196, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .promo_subheader {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 30px;
+  }
+  /* line 200, ../../Users/Богдан/Desktop/html/Uber/src/sass/_media.sass */
+  .promo_descr {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
