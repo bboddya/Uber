@@ -101,7 +101,7 @@
     .hamburger
         display: block
         position: absolute
-        right: 10px
+        right: 35px
         top: 50%
         transform: translateY(-50%)
         width: 26px
@@ -135,12 +135,15 @@
             width: 200px
             height: 40px
             margin: 0 auto
+            background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
     .promo
         padding: 180px 0 120px 0
         &_header
             font-size: 35px
         &_subheader
             font-size: 23px
+        &_btn
+            background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
     .title
         font-size: 27px
     .choise
@@ -175,8 +178,12 @@
 @media (max-width: 575px)
     header
         .menu
+            &_item
+                width: 100%
+                text-align: center
             &_link
                 font-size: 11px
+                display: block
     .subheader
         height: 60px
         &_logo
